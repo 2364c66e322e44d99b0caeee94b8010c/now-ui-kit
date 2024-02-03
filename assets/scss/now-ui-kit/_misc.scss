@@ -17,7 +17,7 @@ body{
 .navbar,
 .nav-tabs .nav-link,
 .tag,
-.tag [data-role="remove"]{
+.tag [data-bs-role="remove"]{
     @include transition($general-transition-time, $transition-ease);
 }
 
@@ -28,12 +28,12 @@ body{
 }
 
 .dropdown-toggle:after,
-[data-toggle="collapse"][data-parent="#accordion"] i{
+[data-bs-toggle="collapse"] i{
   @include transition-on-prop(transform, $fast-transition-time, $transition-ease);
 }
 
 .dropdown-toggle[aria-expanded="true"]:after,
-[data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] i{
+[data-bs-toggle="collapse"][aria-expanded="true"] i{
     @include rotate-180();
 }
 

@@ -12,14 +12,6 @@
         }
     }
 
-    .dropdown &{
-        @include transform-translate-y-dropdown(-25px);
-        visibility: hidden;
-        display: block;
-        @include opacity(0);
-        top: 100% !important;
-    }
-
     .dropdown.show &,
     &.open{
         @include opacity(1);

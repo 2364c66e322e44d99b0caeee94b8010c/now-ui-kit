@@ -41,13 +41,6 @@
                 padding-left: 2.5rem;
             }
 
-            .dropdown-menu{
-               display: none;
-           }
-
-           &.show .dropdown-menu{
-               display: block;
-           }
         }
 
         .dropdown-menu .dropdown-item:focus,
