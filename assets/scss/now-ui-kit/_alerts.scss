@@ -48,14 +48,18 @@
         font-size: 20px;
     }
 
-    .close{
-        color: $white-color;
+    .btn-close{
+       color: $white-color;
+        background: none !important; /* Removes any background color */
+        background-image: none !important; /* Removes the default background image, if any */
+        border: none; /* Optional: removes the border if present */
         opacity: .9;
         text-shadow: none;
         line-height: 0;
         outline: 0;
         display: inline-block;
         cursor: pointer;
+        float: right;
 
     }
 }
