@@ -56,30 +56,12 @@
     }
 }
 
-
-.tooltip{
-    &.bs-tooltip-right .arrow:before{
-        border-right-color:$white-color;
-    }
-
-    &.bs-tooltip-top .arrow:before{
-        border-top-color:$white-color;
-    }
-
-    &.bs-tooltip-bottom .arrow:before{
-        border-bottom-color:$white-color;
-    }
-
-    &.bs-tooltip-left .arrow:before{
-        border-left-color:$white-color;
-    }
-}
-
-.tooltip-inner{
-    padding: $padding-base-vertical $padding-base-horizontal;
-    min-width: 130px;
-    background-color: $white-color;
-    font-size: $font-size-base;
-    color: inherit;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+.tooltip {
+  --bs-tooltip-bg: #{$white-color};
+  --bs-tooltip-color: #2c2c2c;
+  --bs-tooltip-padding-x: #{$padding-base-horizontal};
+  --bs-tooltip-padding-y: #{$padding-base-vertical};
+  --bs-tooltip-font-size: 0.8rem;
+  min-width: 120px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
