@@ -15,10 +15,6 @@
        color: $color;
        @include opacity($opacity);
    }
-   .form-control:-ms-input-placeholder{
-       color: $color;
-       @include opacity($opacity);
-   }
 }
 
 @mixin light-form(){

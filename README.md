@@ -4,12 +4,56 @@
 
 ![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1466002372 "Now UI Kit")
 
+# Bootstrap 5 Support
 
-**Bootstrap 5 Support**
 Now UI Kit has been migrated to Bootstrap 5. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 5 project; you can just import the Now UI Kit style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
-
 **[Now UI Kit](http://demos.creative-tim.com/now-ui-kit/index.html?ref=nuk-readme)** is a responsive Bootstrap 4 kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates, and was migrated to be compatible with Bootstrap 5. Build process has also been updated with the latest version of Gulp.
+
+# Build tools
+
+Learn how to use Now UI Kit compiling SCSS, change brand-colors and more.
+
+### Tooling setup
+
+### Change brand colors
+
+- You will find all the branding colors inside `assets/scss/_variables.scss`.
+
+### Compile SCSS (global installation)
+
+1. Download the project’s zip.
+2. Make sure you have node.js (https://nodejs.org/en/) installed.
+3. Type `npm install` in terminal/console in the source folder where `package.json` is located.
+4. Run in terminal `gulp open-app` for opening the Dashboard Page (default) of the product. You can set in gulpfile.js from your downloaded archive any page you want to open in browser, at line 30: `gulp.src('index.html')`.
+5. Run in terminal `gulp compileScss` for a single compilation or `gulp watch` for continuous compilation of the changes that you make in `*.scss` files. This command should be run in the same folder where `gulpfile.js` and `package.json` are located.
+
+### Compile SCSS (local installation)
+
+To compile CSS using Gulp without a global installation, follow these steps:
+
+1. Ensure you have a recent version of `npm` (5.2 or higher) which includes `npx`.
+2. Open your terminal and navigate to your project directory.
+3. Use `npx` to run Gulp tasks. For example, to compile SCSS, execute:
+
+   ```bash
+   npx gulp compileScss
+   ```
+
+This command uses npx to temporarily install Gulp if it's not already installed and then runs the compile-scss task.
+
+To continuously watch for changes in your SCSS files and compile them, use:
+bash
+
+   ```bash
+  npx gulp watch
+  ```
+
+This will keep the process running and compile CSS whenever you make changes to your SCSS files.
+
+This guide is designed for users with a newer `npm` environment, leveraging `npx` for ease of use with locally installed packages.
+
+# Now UI Kit
 
 Now UI Kit is one of the most popular UI Kits online, provided in PSD and Sketch formats by Invision. We wanted to find a way for developers worldwide to benefit from using it. So, in collaboration with Invision, we are launching the HTML version for it!
 
