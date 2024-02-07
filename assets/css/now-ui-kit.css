@@ -4507,6 +4507,9 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.login-page .page-header .container {
+  padding-top: 0 !important;
+}
 .login-page .card-login {
   border-radius: 0.25rem;
   padding-bottom: 0.7rem;

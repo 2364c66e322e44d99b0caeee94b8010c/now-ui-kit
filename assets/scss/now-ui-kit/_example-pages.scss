@@ -229,7 +229,11 @@
 
 .login-page{
 
-
+    .page-header {
+      .container {
+        padding-top: 0 !important;
+      }
+    }
 
     .card-login{
         border-radius: $border-radius-large;
