@@ -42,9 +42,9 @@
   }
 
   > .container{
-    height: 100%;
-    position: relative;
-    text-align: center;
+    z-index: 2;
+    padding-top: 12vh;
+    padding-bottom: 40px;
   }
 
     .page-header-image{
@@ -79,9 +79,7 @@
     }
     .container{
         height: 100%;
-        z-index: 2;
-        padding-top: 12vh;
-        padding-bottom: 40px;
+        z-index: 1;
         text-align: center;
         position: relative;
     }

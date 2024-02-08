@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.3.1] 2024-02-03
+### Bugfixing & Bootstrap 5.3.2 integration
+- Port to Bootstrap 5.3.2
+- Bootstrap Switch library updated
+- NoUiSlider library updated
+- Jquery library updated
+- Popper library updated
+
 ## [1.3.0] 2019-04-12
 ### Bugfixing & Bootstrap 4.3.1 integration
 - Bootstrap Switch library updated

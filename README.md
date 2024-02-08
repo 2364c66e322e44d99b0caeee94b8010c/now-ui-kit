@@ -8,7 +8,7 @@
 
 Now UI Kit has been migrated to Bootstrap 5. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 5 project; you can just import the Now UI Kit style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
-** Bostrap Version**: since tooltip has been changed in version 5.2, a version >= 5.2 of Bootstrap is necessary for usage with tooltip.
+**Bootstrap Version**: since tooltip has been changed in version 5.2, a version >= 5.2 of Bootstrap is necessary for usage with tooltip.
 
 **[Now UI Kit](http://demos.creative-tim.com/now-ui-kit/index.html?ref=nuk-readme)** is a responsive Bootstrap 5 kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates, and was migrated to be compatible with Bootstrap 5. Build process has also been updated with the latest version of Gulp.
 
