@@ -42,7 +42,16 @@ To compile CSS using Gulp without a global installation, follow these steps:
    npx gulp compileScss
    ```
 
-This command uses npx to temporarily install Gulp if it's not already installed and then runs the compile-scss task.
+This command uses npx to temporarily install Gulp if it's not already installed and then runs the compileScss task.
+
+If you wish to have a minified version with a map, execute:
+
+   ```bash
+   npx gulp compileScssMin
+   ```
+
+This command uses npx to temporarily install Gulp if it's not already installed and then runs the compileScssMin task.
+
 
 To continuously watch for changes in your SCSS files and compile them, use:
 bash
@@ -51,7 +60,7 @@ bash
   npx gulp watch
   ```
 
-This will keep the process running and compile CSS whenever you make changes to your SCSS files.
+This will keep the process running and compile CSS (both minified and non-minified version) whenever you make changes to your SCSS files.
 
 This guide is designed for users with a newer `npm` environment, leveraging `npx` for ease of use with locally installed packages.
 

@@ -1,13 +1,13 @@
-// Importing modules using ES Module syntax
 import gulp from 'gulp';
 import sourcemaps from 'gulp-sourcemaps';
 import open from 'gulp-open';
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+import cleanCSS from 'gulp-clean-css';
+import rename from 'gulp-rename';
 
 const sass = gulpSass(dartSass);
 
-// The rest of your gulpfile.mjs remains the same
 const Paths = {
   HERE: './',
   DIST: 'dist/',
@@ -16,34 +16,40 @@ const Paths = {
   SCSS: './assets/scss/**/**'
 };
 
-// Dynamically import gulp-autoprefixer
 const autoprefixer = () => import('gulp-autoprefixer').then(module => module.default);
 
-// Compile SCSS task
+// Modified compileScss task without sourcemaps.init()
 export const compileScss = async () => {
+  const autoprefixerModule = await autoprefixer();
+  return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixerModule())
+    .pipe(gulp.dest(Paths.CSS));
+};
+
+// New compileScssMin task
+export const compileScssMin = async () => {
   const autoprefixerModule = await autoprefixer();
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixerModule())
-    .pipe(sourcemaps.write(Paths.HERE))
+    .pipe(cleanCSS())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(Paths.CSS));
 };
 
-// Watch task
 export function watch() {
   gulp.watch(Paths.SCSS, compileScss);
+  gulp.watch(Paths.SCSS, compileScssMin);
 }
 
-// Open task
 export function openApp() {
   return gulp.src('index.html')
     .pipe(open());
 }
 
-// Open-app task combining open and watch
 export const openAppTask = gulp.series(openApp, watch);
 
-// Default task for compatibility
 export default openAppTask;
-
