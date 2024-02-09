@@ -2677,7 +2677,6 @@ p {
 
 .title {
   font-weight: 700;
-  padding-top: 30px;
 }
 .title.title-up {
   text-transform: uppercase;
@@ -2690,6 +2689,11 @@ p {
   margin-top: -25px;
 }
 
+@media (min-width: 1024px) {
+  .title {
+    padding-top: 30px;
+  }
+}
 .description,
 .card-description,
 .footer-big p {
@@ -4410,7 +4414,6 @@ img {
 }
 .profile-page .title {
   text-align: center;
-  margin-top: 30px;
 }
 .profile-page .description,
 .profile-page .category {
@@ -5705,4 +5708,3 @@ img {
     margin-top: -330px;
   }
 }
-/*# sourceMappingURL=now-ui-kit.css.map */

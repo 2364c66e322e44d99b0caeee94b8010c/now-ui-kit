@@ -73,8 +73,6 @@ p{
 
 .title{
     font-weight: $font-weight-bold;
-    padding-top: 30px;
-
 
     &.title-up{
         text-transform: uppercase;
@@ -86,6 +84,12 @@ p{
     }
     & + .category{
         margin-top: -25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title{
+        padding-top: 30px;
     }
 }
 
