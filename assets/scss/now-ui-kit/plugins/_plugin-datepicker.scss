@@ -24,6 +24,10 @@
   &.datepicker-primary{
       @include datepicker-colors($primary-color);
   }
+
+  &.datepicker-complementary{
+      @include datepicker-colors($complementary-color);
+  }
 }
 .datepicker-inline {
   width: 220px;
@@ -120,9 +124,9 @@
   box-sizing: border-box;
 }
 
-.datepicker th{
-    color: $primary-color;
-}
+//.datepicker th{
+//    color: $primary-color;
+//}
 
 .table-condensed > tbody > tr > td,
 .table-condensed > tbody > tr > th,

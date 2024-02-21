@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Now UI Kit - v1.3.1
+ * Now UI Kit - v1.3.2
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/now-ui-kit
@@ -782,6 +782,114 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker.datepicker-primary table tr td span.active.disabled:hover[disabled] {
   color: #0083b3;
 }
+.datepicker.datepicker-complementary {
+  background-color: #ff4400;
+}
+.datepicker.datepicker-complementary th,
+.datepicker.datepicker-complementary .day div,
+.datepicker.datepicker-complementary table tr td span {
+  color: #FFFFFF;
+}
+.datepicker.datepicker-complementary:after {
+  border-bottom-color: #ff4400;
+}
+.datepicker.datepicker-complementary.datepicker-orient-top:after {
+  border-top-color: #ff4400;
+}
+.datepicker.datepicker-complementary .dow {
+  color: rgba(255, 255, 255, 0.8);
+}
+.datepicker.datepicker-complementary table tr td.old div,
+.datepicker.datepicker-complementary table tr td.new div,
+.datepicker.datepicker-complementary table tr td span.old,
+.datepicker.datepicker-complementary table tr td span.new {
+  color: rgba(255, 255, 255, 0.4);
+}
+.datepicker.datepicker-complementary table tr td span:hover,
+.datepicker.datepicker-complementary table tr td span.focused {
+  background: rgba(255, 255, 255, 0.1);
+}
+.datepicker.datepicker-complementary .datepicker-switch:hover,
+.datepicker.datepicker-complementary .prev:hover,
+.datepicker.datepicker-complementary .next:hover,
+.datepicker.datepicker-complementary tfoot tr th:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.datepicker.datepicker-complementary table tr td.active div,
+.datepicker.datepicker-complementary table tr td.active:hover div,
+.datepicker.datepicker-complementary table tr td.active.disabled div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover div {
+  background-color: #FFFFFF;
+  color: #ff4400;
+}
+.datepicker.datepicker-complementary table tr td.day:hover div,
+.datepicker.datepicker-complementary table tr td.day.focused div {
+  background: rgba(255, 255, 255, 0.2);
+}
+.datepicker.datepicker-complementary table tr td.active:hover div,
+.datepicker.datepicker-complementary table tr td.active:hover:hover div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover:hover div,
+.datepicker.datepicker-complementary table tr td.active:active div,
+.datepicker.datepicker-complementary table tr td.active:hover:active div,
+.datepicker.datepicker-complementary table tr td.active.disabled:active div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover:active div,
+.datepicker.datepicker-complementary table tr td.active.active div,
+.datepicker.datepicker-complementary table tr td.active:hover.active div,
+.datepicker.datepicker-complementary table tr td.active.disabled.active div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover.active div,
+.datepicker.datepicker-complementary table tr td.active.disabled div,
+.datepicker.datepicker-complementary table tr td.active:hover.disabled div,
+.datepicker.datepicker-complementary table tr td.active.disabled.disabled div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover.disabled div,
+.datepicker.datepicker-complementary table tr td.active[disabled] div,
+.datepicker.datepicker-complementary table tr td.active:hover[disabled] div,
+.datepicker.datepicker-complementary table tr td.active.disabled[disabled] div,
+.datepicker.datepicker-complementary table tr td.active.disabled:hover[disabled] div,
+.datepicker.datepicker-complementary table tr td span.active:hover,
+.datepicker.datepicker-complementary table tr td span.active:hover:hover,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover:hover,
+.datepicker.datepicker-complementary table tr td span.active:active,
+.datepicker.datepicker-complementary table tr td span.active:hover:active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover:active,
+.datepicker.datepicker-complementary table tr td span.active.active,
+.datepicker.datepicker-complementary table tr td span.active:hover.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled,
+.datepicker.datepicker-complementary table tr td span.active:hover.disabled,
+.datepicker.datepicker-complementary table tr td span.active.disabled.disabled,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover.disabled,
+.datepicker.datepicker-complementary table tr td span.active[disabled],
+.datepicker.datepicker-complementary table tr td span.active:hover[disabled],
+.datepicker.datepicker-complementary table tr td span.active.disabled[disabled],
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover[disabled] {
+  background-color: #FFFFFF;
+}
+.datepicker.datepicker-complementary table tr td span.active:hover,
+.datepicker.datepicker-complementary table tr td span.active:hover:hover,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover:hover,
+.datepicker.datepicker-complementary table tr td span.active:active,
+.datepicker.datepicker-complementary table tr td span.active:hover:active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover:active,
+.datepicker.datepicker-complementary table tr td span.active.active,
+.datepicker.datepicker-complementary table tr td span.active:hover.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover.active,
+.datepicker.datepicker-complementary table tr td span.active.disabled,
+.datepicker.datepicker-complementary table tr td span.active:hover.disabled,
+.datepicker.datepicker-complementary table tr td span.active.disabled.disabled,
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover.disabled,
+.datepicker.datepicker-complementary table tr td span.active[disabled],
+.datepicker.datepicker-complementary table tr td span.active:hover[disabled],
+.datepicker.datepicker-complementary table tr td span.active.disabled[disabled],
+.datepicker.datepicker-complementary table tr td span.active.disabled:hover[disabled] {
+  color: #ff4400;
+}
 
 .datepicker-inline {
   width: 220px;
@@ -888,10 +996,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
-}
-
-.datepicker th {
-  color: #0083b3;
 }
 
 .table-condensed > tbody > tr > td,
