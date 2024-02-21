@@ -1822,6 +1822,7 @@ fieldset[disabled] .btn-link.active {
   background-color: rgba(222, 222, 222, 0.3);
   border: none;
   border-left: transparent !important;
+  border-radius: 50rem 0 0 50rem !important;
 }
 .form-group.no-border.input-group-focus.no-border .input-group-text,
 .input-group.no-border.input-group-focus.no-border .input-group-text {
