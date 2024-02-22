@@ -55,7 +55,7 @@ $(document).ready(function() {
         }
       }
     }
-  }
+  };
 
   $(window).on('resize', function() {
     nowuiKit.initNavbarImage();
@@ -107,7 +107,7 @@ $(document).ready(function() {
       }, wait);
       if (immediate && !timeout) func.apply(context, args);
     };
-  };
+  }
 
   //  Activate the Tooltips
   $('[data-bs-toggle="tooltip"], [rel="tooltip"]').tooltip();
@@ -130,7 +130,7 @@ $(document).ready(function() {
 
   if ($('.navbar[color-on-scroll]').length != 0) {
     nowuiKit.checkScrollForTransparentNavbar();
-    $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
+    $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar);
   }
 
   $('.form-control').on("focus", function() {
@@ -138,40 +138,4 @@ $(document).ready(function() {
   }).on("blur", function() {
     $(this).parent(".input-group").removeClass("input-group-focus");
   });
-
-  // Activate bootstrapSwitch
-  $('.bootstrap-switch').each(function() {
-    $this = $(this);
-    data_on_label = $this.data('on-label') || '';
-    data_off_label = $this.data('off-label') || '';
-
-    $this.bootstrapSwitch({
-      onText: data_on_label,
-      offText: data_off_label
-    });
-  });
-
-  // Activate Carousel
-  $('.carousel').carousel({
-    interval: 4000
-  });
-
-  $('.date-picker').each(function() {
-    $(this).datepicker({
-      templates: {
-        leftArrow: '<i class="now-ui-icons arrows-1_minimal-left"></i>',
-        rightArrow: '<i class="now-ui-icons arrows-1_minimal-right"></i>'
-      }
-    }).on('show', function() {
-      $('.datepicker').addClass('open');
-
-      datepicker_color = $(this).data('datepicker-color');
-      if (datepicker_color.length != 0) {
-        $('.datepicker').addClass('datepicker-' + datepicker_color + '');
-      }
-    }).on('hide', function() {
-      $('.datepicker').removeClass('open');
-    });
-  });
-
 });
