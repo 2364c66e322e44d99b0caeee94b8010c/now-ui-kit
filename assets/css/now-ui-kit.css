@@ -2405,8 +2405,12 @@ h6, .h6 {
 
 p {
   line-height: 1.61em;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2em;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .title {
@@ -2432,7 +2436,7 @@ p {
 .card-description,
 .footer-big p {
   color: #9A9A9A;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .category {
